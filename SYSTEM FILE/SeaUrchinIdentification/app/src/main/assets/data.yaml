@@ -1,0 +1,19 @@
+names:
+- con2
+- dapaw2
+- fire urchin
+- paja2x
+- sijok2x
+- suwaki
+- tuyom
+- ubanon
+nc: 8
+roboflow:
+  license: CC BY 4.0
+  project: sea-urchin-10r8i
+  url: https://universe.roboflow.com/thesis-ztpwb/sea-urchin-10r8i/dataset/1
+  version: 1
+  workspace: thesis-ztpwb
+test: ../test/images
+train: Sea-urchin-1/train/images
+val: Sea-urchin-1/valid/images

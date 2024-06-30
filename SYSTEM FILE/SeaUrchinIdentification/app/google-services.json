@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "945277827340",
+    "project_id": "herbal-plant-identification",
+    "storage_bucket": "herbal-plant-identification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945277827340:android:22b3a5c19b6c936a8a7129",
+        "android_client_info": {
+          "package_name": "com.bisu.herbalplantidentification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945277827340-kluc5o8f2s3n6sfkrsohbil97ft3e9dv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPn6LfPz_EYWN0cD1JAIulIRvYwZG14xY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945277827340-kluc5o8f2s3n6sfkrsohbil97ft3e9dv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

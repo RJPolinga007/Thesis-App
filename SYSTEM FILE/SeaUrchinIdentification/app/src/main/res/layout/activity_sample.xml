@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SampleActivity">
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+
+                    android:background="@drawable/half_rounded">
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_bold"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Developer's Information"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="409dp"
+                        android:layout_height="200dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/top_background" />
+
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/sv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="410dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/layoutscanview"
+                                android:layout_width="187dp"
+                                android:layout_height="214dp"
+                                android:layout_marginStart="100dp"
+                                android:layout_marginTop="70dp"
+                                android:layout_marginEnd="100dp"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:text="DENVHER SUELLO SALADORES"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:padding="8dp"
+                                    android:text="09993380385"
+                                    android:textColor="@color/teal" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="18dp"
+                                    android:background="@drawable/readmorebackground"
+                                    android:fadingEdge="vertical"
+                                    android:fontFamily="@font/mo_me"
+                                    android:padding="5dp"
+                                    android:paddingStart="25dp"
+                                    android:gravity="center"
+                                    android:text="Bohol Island State University - Calape Campus"
+                                    android:textSize="13dp" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/readmorebackground"
+                                    android:fadingEdge="vertical"
+                                    android:fontFamily="@font/mo_me"
+                                    android:padding="5dp"
+                                    android:paddingStart="25dp"
+                                    android:gravity="center"
+                                    android:text="Batch 2022-2023"
+                                    android:textSize="13dp" />
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:paddingStart="25dp"
+                                    android:text="Birthdate"
+                                    android:textColor="@color/dark_late_gray2"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:text="March 23, 2001"
+                                    android:textColor="@color/dark_late_gray"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:paddingStart="25dp"
+                                    android:text="Nationality"
+                                    android:textColor="@color/dark_late_gray2"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView161"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:text="FILIPINO"
+                                    android:textColor="@color/dark_late_gray"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:paddingStart="25dp"
+                                    android:text="Email Address"
+                                    android:textColor="@color/dark_late_gray2"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView162"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:text="denvher.saladores@bisu.edu.ph"
+                                    android:textColor="@color/dark_late_gray"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:paddingStart="25dp"
+                                    android:text="Current Address"
+                                    android:textColor="@color/dark_late_gray2"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView164"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:text="PUROK 5, Canhangdon Occidental, Loon, Bohol, Philippines, 6327"
+                                    android:textColor="@color/dark_late_gray"
+                                    android:textSize="18dp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/layoutscanview1"
+                                android:layout_width="187dp"
+                                android:layout_height="214dp"
+                                android:layout_marginStart="100dp"
+                                android:layout_marginTop="70dp"
+                                android:layout_marginEnd="100dp"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    app:civ_border_color="@android:color/white"
+                                    app:civ_border_width="10dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/nunito_bold"
+                                android:text="GENNYBEL PESIDAS ORACION"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/nunito_bold"
+                                android:padding="8dp"
+                                android:text="09486456301"
+                                android:textColor="@color/teal" />
+
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:background="@drawable/readmorebackground"
+                                android:fadingEdge="vertical"
+                                android:fontFamily="@font/mo_me"
+                                android:padding="5dp"
+                                android:paddingStart="25dp"
+                                android:gravity="center"
+                                android:text="Bohol Island State University - Calape Campus"
+                                android:textSize="13dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/readmorebackground"
+                                android:fadingEdge="vertical"
+                                android:fontFamily="@font/mo_me"
+                                android:padding="5dp"
+                                android:paddingStart="25dp"
+                                android:gravity="center"
+                                android:text="Batch 2019-2023"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/textView131"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/nunito_bold"
+                                android:paddingStart="25dp"
+                                android:text="Birthdate"
+                                android:textColor="@color/dark_late_gray2"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView16111"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/nunito_bold"
+                                android:text="August 31, 2001"
+                                android:textColor="@color/dark_late_gray"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/textView101"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/nunito_bold"
+                                android:paddingStart="25dp"
+                                android:text="Nationality"
+                                android:textColor="@color/dark_late_gray2"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView1611"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/nunito_bold"
+                                android:text="FILIPINO"
+                                android:textColor="@color/dark_late_gray"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/textView141"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/nunito_bold"
+                                android:paddingStart="25dp"
+                                android:text="Email Address"
+                                android:textColor="@color/dark_late_gray2"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView1621"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/nunito_bold"
+                                android:text="gennybel.oracion@bisu.edu.ph"
+                                android:textColor="@color/dark_late_gray"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/textView151"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/nunito_bold"
+                                android:paddingStart="25dp"
+                                android:text="Current Address"
+                                android:textColor="@color/dark_late_gray2"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView163"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/nunito_bold"
+                                android:text="PUROK 6, Nueva Vida, Loon, Bohol, Philippines, 6327"
+                                android:textColor="@color/dark_late_gray"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_home"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:elevation="10dp"
+                    android:text="HOME"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_home_24"
+        android:fontFamily="@font/med"
+        android:title="Home" />
+    <item
+        android:id="@+id/contactUs"
+        android:fontFamily="@font/med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_call_24"
+        android:title="ContactUs" />
+    <item
+        android:id="@+id/developers"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/med"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_supervisor_account_24"
+        android:title="Profile" />
+</menu>

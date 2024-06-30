@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#D8D6D6"
+tools:context=".aboutapp">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/topss"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="-75dp"
+        android:src="@drawable/wave__2_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_marginTop="63dp"
+        android:layout_width="60dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/arrow"
+        android:layout_height="30dp"/>
+    <TextView
+        android:layout_marginTop="64dp"
+        android:textStyle="bold"
+        android:text="About App"
+        android:fontFamily="@font/med"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="70dp"
+        android:layout_height="30dp"/>
+
+</androidx.cardview.widget.CardView>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/topss"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/idcard"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="110dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="100dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/update"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="100dp"/>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:text="Update Personal Information"
+                android:textSize="15dp"
+                android:fontFamily="@font/med"
+                android:textColor="@color/black"
+                android:layout_marginLeft="140dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/idhelp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="110dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="100dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/appguide"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="100dp"/>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:text="App Guide"
+                android:textSize="15dp"
+                android:fontFamily="@font/med"
+                android:textColor="@color/black"
+                android:layout_marginLeft="140dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rateUs"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="110dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="100dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/rate"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="100dp"/>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:text="Rate Us!"
+                android:textSize="15dp"
+                android:fontFamily="@font/med"
+                android:textColor="@color/black"
+                android:layout_marginLeft="140dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="FishCheck is a mobile app that helps you assess the quality of fish before you buy it. It includes Identifying the fish and Quality Assesment, It also includes additional resources, such as a list of common fish species and their Descriptions. FishCheck is a valuable tool for anyone who wants to ensure that they are buying and eating fresh, high-quality fish. It is easy to use and provides comprehensive information in assessing fish quality.Motivated by a desire to empower consumers with knowledge, FishCheck was born. We understand the importance of making informed choices, especially when it comes to something as vital as the food we consume. With FishCheck, gone are the days of uncertainty and guesswork. FishCheck equips you with two powerful tools: Identifying the Fish and Quality Assessment. Identifying the Fish: With a simple scan using your smartphone camera, FishCheck swiftly identifies the species of fish before you buy it. No more confusion over names or appearances—now you can know exactly what you're looking at. Quality Assessment: Ever wondered if that fish on display is as fresh as it looks? FishCheck's quality assessment feature provides real-time detection and identification, giving you insights into the freshness and quality of the fish. Say goodbye to doubts and hello to confidence in your purchase."
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/med"
+                android:textColor="@color/black"
+                android:layout_marginLeft="140dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".help">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tops"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="-75dp"
+            android:src="@drawable/wave__2_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginTop="63dp"
+            android:layout_width="60dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/arrow"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_marginTop="60dp"
+            android:textStyle="bold"
+            android:text="App Guide"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="70dp"
+            android:layout_height="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_below="@+id/tops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:onClick="expand3"
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            app:contentPadding="10dp"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="-3dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/home"/>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginStart="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:foregroundGravity="center"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <ScrollView
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="-100dp"
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details3"
+                        android:layout_width="320dp"
+                        android:fontFamily="@font/med"
+                        android:text="Home button is the Main activity that contains the dashboard and other features can be found."
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textSize="15sp"/>
+                </ScrollView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:onClick="expand"
+        android:layout_below="@+id/tops"
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        app:contentPadding="10dp"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="-3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/scan"/>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginStart="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:foregroundGravity="center"
+                android:text="Scan"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <ScrollView
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="-100dp"
+                android:layout_width="365dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/details"
+                    android:layout_width="320dp"
+                    android:fontFamily="@font/med"
+                    android:text="This is where Camera Detection part where the quality of the fish will provide real-time detection and identification whether it is fresh or not, user in the application can save the detected fish for their history. "
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textSize="15sp"/>
+            </ScrollView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:onClick="expand1"
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            app:contentPadding="10dp"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="-3dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/describe"/>
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginStart="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:foregroundGravity="center"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <ScrollView
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="-150dp"
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details1"
+                        android:layout_width="320dp"
+                        android:fontFamily="@font/med"
+                        android:text="Contains all the information’s of the fish that being gathered and used in the application that inserted in the database will be use to display."
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textSize="15sp"/>
+                </ScrollView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:onClick="expand2"
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            app:contentPadding="10dp"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="-3dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/history"/>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginStart="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:foregroundGravity="center"
+                    android:text="History"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <ScrollView
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="-110dp"
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details2"
+                        android:layout_width="320dp"
+                        android:fontFamily="@font/med"
+                        android:text="In this function user are able to see the saved information of the fish detected."
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textSize="15sp"/>
+                </ScrollView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:onClick="expand4"
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            app:contentPadding="10dp"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="-3dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/abou"/>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginStart="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:foregroundGravity="center"
+                    android:text="About App"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <ScrollView
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="-136dp"
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details4"
+                        android:layout_width="320dp"
+                        android:fontFamily="@font/med"
+                        android:text="In about app part this is where the information of the mobile application and motivation why they create this app and in this part the user can update their account personal information and app guide is found."
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textSize="15sp"/>
+                </ScrollView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:onClick="expand5"
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            app:contentPadding="10dp"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="-3dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/contact"/>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginStart="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:foregroundGravity="center"
+                    android:text="Contact Us"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <ScrollView
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="-140dp"
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details5"
+                        android:layout_width="320dp"
+                        android:fontFamily="@font/med"
+                        android:text="Contact us in this part user could contact to the developer of the app if they had more questions and concerns about the mobile application."
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textSize="15sp"/>
+                </ScrollView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:onClick="expand6"
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            app:contentPadding="10dp"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="-3dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/developer"/>
+
+            <LinearLayout
+                android:id="@+id/layout6"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginStart="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:foregroundGravity="center"
+                    android:text="Developers Profile"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <ScrollView
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="-194dp"
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details6"
+                        android:layout_width="320dp"
+                        android:fontFamily="@font/med"
+                        android:text="Developers profile is where developer Personal Information located."
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textSize="15sp"/>
+                </ScrollView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:onClick="expand7"
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            app:contentPadding="10dp"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="-3dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/logout"/>
+
+            <LinearLayout
+                android:id="@+id/layout7"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginStart="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:foregroundGravity="center"
+                    android:text="Log Out"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <ScrollView
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="-115dp"
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details7"
+                        android:layout_width="320dp"
+                        android:fontFamily="@font/med"
+                        android:text="Log out from the name itself user will be logged out from the application."
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textSize="15sp"/>
+                </ScrollView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

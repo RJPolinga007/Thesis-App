@@ -1,0 +1,8 @@
+- Tihi - tihi (Edible)
+- Dapaw - dapaw (Non - Edible)
+- Fire urchin (Non - Edible)
+- Paja - paja (Edible)
+- Sijok - sijok (Non - Edible)
+- Suwaki (Edible)
+- Tuyom (Edible)
+- Ubanon (Edible)

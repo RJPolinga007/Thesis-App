@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity"
+    app:backgroundTint="@null"
+    android:background="@drawable/custom_bg">
+
+    <LinearLayout
+        android:orientation="@null"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/wave_top"/>
+
+    <LinearLayout
+        android:orientation="@null"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/wave_bottom"
+        android:layout_below="@+id/top"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sea Urchin App"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:fontFamily="@font/quicksand_bold"/>
+
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edible and Non-Edible"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/quicksand_light"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Identification"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/quicksand_light"/>
+    </LinearLayout>
+
+</RelativeLayout>

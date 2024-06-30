@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:background="#F1F3F4"
+android:layout_height="match_parent"
+tools:context=".FishDashboard">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#1B9FE4"
+        app:titleTextColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="247dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="-28dp"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:id="@+id/bac"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="#1B9EE3"
+                        android:background="@color/white"
+                        android:src="@drawable/logof"
+                        android:layout_marginStart="12dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:text="FISHCHECK"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="23dp"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/koho_regular"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/into"
+                        android:layout_width="30dp"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="23dp"
+                        android:src="@drawable/ic_info"
+                        android:layout_height="30dp"/>
+
+                </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/im"
+                android:layout_marginTop="80dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/baseline_person_24"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="5dp" />
+
+            <TextView
+                android:id="@+id/tex"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/im"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="96dp"
+                android:fontFamily="@font/med"
+                android:paddingStart="6dp"
+                android:text="Good Day!"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_below="@+id/tex"
+                android:layout_width="210dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/med"
+                android:paddingStart="10dp"
+                android:text="Helloo User!"
+                android:textSize="25sp"
+                android:layout_toRightOf="@+id/im" />
+
+            <ImageView
+                android:layout_width="290dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="178dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/boat"
+                tools:ignore="UnknownId" />
+
+        </RelativeLayout>
+
+
+        <!-- <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/im"
+            android:layout_marginTop="30dp"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/baseline_person_24"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="5dp" />
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/med"
+            android:paddingStart="30dp"
+            android:text="Good Day!"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/eser"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/med"
+            android:paddingStart="30dp"
+            android:text="Helloo User!"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="FishCheck:"
+            android:layout_gravity="center"
+            android:fontFamily="@font/med"
+            android:textColor="#F8F5F5"
+            android:textSize="35sp"
+            android:outlineAmbientShadowColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/med"
+            android:paddingStart="30dp"
+            android:text="Good Day!"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/med"
+            android:paddingStart="30dp"
+            android:text="Helloo User!"
+            android:textSize="25sp" />
+    </LinearLayout>-->
+
+</androidx.appcompat.widget.Toolbar>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-20dp"
+        android:columnCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCapture"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:onClick="btnClick"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/scan"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Scan"
+                    android:fontFamily="@font/med"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDescription"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/describe"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Description"
+                    android:gravity="center"
+                    android:fontFamily="@font/med"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardInfo"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/history" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="History"
+                    android:fontFamily="@font/med"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLogout"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/logout" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Log out"
+                    android:fontFamily="@font/med"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+        <!--<androidx.cardview.widget.CardView
+            android:onClick="expand"
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginStart="100dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About"
+                        android:drawableRight="@drawable/baseline_info_24"
+                        android:drawablePadding="5dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                    <ScrollView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/details"
+                            android:layout_width="match_parent"
+                            android:fontFamily="@font/med"
+                            android:text="FishCheck is a mobile app that helps you assess the quality of fish before \n you buy it. It includes Identifying the fish and Quality Assesment, It also \n includes additional resources, such as a list of common fish species and their characteristics.
+            FishCheck is a valuable tool for anyone who wants\n to ensure that they are buying and eating fresh, high-quality fish. It is easy to use and provides comprehensive \n information on how to assess fish quality."
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:textSize="11sp"/>
+                    </ScrollView>
+            </LinearLayout>
+
+    </androidx.cardview.widget.CardView>-->
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:layout_width="match_parent"
+    android:id="@+id/bottom_nav"
+    android:layout_height="60dp"
+    app:itemBackground="@color/white"
+    android:foregroundGravity="bottom"
+    android:layout_marginTop="90dp"
+    android:layout_gravity="bottom"
+    app:menu="@menu/menu"/>
+</LinearLayout>

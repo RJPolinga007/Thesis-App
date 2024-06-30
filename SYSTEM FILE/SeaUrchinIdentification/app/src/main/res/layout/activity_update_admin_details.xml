@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateAdminDetails"
+    android:background="@color/background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="30dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_bg"
+            android:padding="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:onClick="toHome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Settings"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/quicksand_semibold"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:layout_below="@+id/top">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="30dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Information"
+                        android:textSize="18sp"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/quicksand_semibold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_grey"
+                        android:alpha="0.7"
+                        android:layout_marginTop="2dp"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account ID:"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:layout_marginRight="15dp"/>
+
+                        <TextView
+                            android:id="@+id/idTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/quicksand_semibold"/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Username"
+                        android:textColorHint="@color/grey"
+                        android:layout_marginTop="30dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/usernameET"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:textColor="@color/black"
+                            android:inputType="text"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:enabled="false"
+                            android:padding="5dp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:textColorHint="@color/grey"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/emailET"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:enabled="false"
+                            android:padding="5dp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:textColorHint="@color/grey"
+                        android:layout_marginTop="10dp"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleDrawable="@drawable/password_toggle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/passwordET"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:textColor="@color/black"
+                            android:inputType="textPassword"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:enabled="false"
+                            android:padding="5dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Personal Information"
+                        android:textSize="18sp"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/quicksand_semibold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_grey"
+                        android:alpha="0.7"
+                        android:layout_marginTop="2dp"/>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Username"
+                        android:textColorHint="@color/grey"
+                        android:layout_marginTop="30dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editUsernameET"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:textColor="@color/black"
+                            android:inputType="text"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:enabled="true"
+                            android:padding="5dp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:textColorHint="@color/grey"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editEmailET"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:enabled="true"
+                            android:padding="5dp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:textColorHint="@color/grey"
+                        android:layout_marginTop="10dp"
+                        app:counterMaxLength="8"
+                        app:counterEnabled="true"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleDrawable="@drawable/password_toggle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editPasswordET"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:textColor="@color/black"
+                            android:inputType="textPassword"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:maxLength="8"
+                            android:enabled="true"
+                            android:padding="5dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/updateBTN"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/custom_button"
+                        app:backgroundTint="@null"
+                        android:text="Update"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand_semibold"
+                        android:layout_marginTop="30dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                app:cardElevation="50dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/custom_bg">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sea Urchin"
+                        android:fontFamily="@font/quicksand_light"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:letterSpacing="0.5"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,839 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgrounggreen" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="300dp"
+                    android:layout_marginEnd="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunito_bold"
+                            android:gravity="center"
+                            android:text="Plant Information"
+                            android:textColor="@color/black"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="External Use:"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/ExternalButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:background="@drawable/morebutton"
+                            android:elevation="15dp"
+                            android:fontFamily="@font/nunito_semi_bold"
+                            android:textColor="@color/white"
+                            android:text="more" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp">
+
+                            <LinearLayout
+                                android:id="@+id/scrollview1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/achioterecom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="40dp"
+                                    android:background="@drawable/bg_recommended"
+                                    android:clickable="true"
+                                    android:elevation="20dp"
+                                    android:focusable="true">
+
+                                    <RelativeLayout
+                                        android:id="@+id/achiote"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/item_recommended_picture_Achiote"
+                                            android:layout_width="120dp"
+                                            android:layout_height="150dp"
+                                            android:background="@drawable/achiote" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_title_Achiote"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_Achiote"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_toStartOf="@+id/item_recommended_price_Achiote"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:lines="1"
+                                            android:maxLines="1"
+                                            android:singleLine="true"
+                                            android:text="Achiote"
+                                            android:textColor="@color/dark_late_gray" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_price_Achiote"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_Achiote"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="10dp"
+                                            android:drawableEnd="@drawable/ic_baseline_read"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:textColor="@color/cadet_blue" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_country_Achiote"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_title_Achiote"
+                                            android:layout_marginStart="10dp"
+                                            android:fontFamily="@font/nunito_semi_bold"
+                                            android:text="Annato Leaves"
+                                            android:textColor="@color/gray"
+                                            android:textSize="11sp"
+                                            tools:ignore="SmallSp" />
+
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/picture_Asunting"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="40dp"
+                                    android:background="@drawable/bg_recommended"
+                                    android:clickable="true"
+                                    android:elevation="20dp"
+                                    android:focusable="true">
+
+                                    <RelativeLayout
+                                        android:id="@+id/asunting"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/item_recommended_picture_Asunting"
+                                            android:layout_width="120dp"
+                                            android:layout_height="150dp"
+                                            android:background="@drawable/asunting1" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_title_Asunting"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_Asunting"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_toStartOf="@+id/item_recommended_price_Asunting"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:lines="1"
+                                            android:maxLines="1"
+                                            android:singleLine="true"
+                                            android:text="Asunting"
+                                            android:textColor="@color/dark_late_gray" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_price_Asunting"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_Asunting"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="10dp"
+                                            android:drawableEnd="@drawable/ic_baseline_read"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:textColor="@color/cadet_blue" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_country_Asunting"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_title_Asunting"
+                                            android:layout_marginStart="10dp"
+                                            android:fontFamily="@font/nunito_semi_bold"
+                                            android:text="Akapulko Leaves"
+                                            android:textColor="@color/gray"
+                                            android:textSize="11sp"
+                                            tools:ignore="SmallSp" />
+
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/image_Atayatay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="40dp"
+                                    android:background="@drawable/bg_recommended"
+                                    android:clickable="true"
+                                    android:elevation="20dp"
+                                    android:focusable="true">
+
+                                    <RelativeLayout
+                                        android:id="@+id/atayatay"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/item_recommended_picture_Atayatay"
+                                            android:layout_width="120dp"
+                                            android:layout_height="150dp"
+                                            android:background="@drawable/atayatay1" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_title_Atayatay"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_Atayatay"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_toStartOf="@+id/item_recommended_price_Atayatay"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:lines="1"
+                                            android:maxLines="1"
+                                            android:singleLine="true"
+                                            android:text="Atay-atay"
+                                            android:textColor="@color/dark_late_gray" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_price_Atayatay"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_Atayatay"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="10dp"
+                                            android:drawableEnd="@drawable/ic_baseline_read"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:textColor="@color/cadet_blue" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_country_Atayatay"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_title_Atayatay"
+                                            android:layout_marginStart="10dp"
+                                            android:fontFamily="@font/nunito_semi_bold"
+                                            android:text="Graptophyllum pictum"
+                                            android:textColor="@color/gray"
+                                            android:textSize="10sp"
+                                            tools:ignore="SmallSp" />
+
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="40dp"
+                                    android:background="@drawable/bg_recommended"
+                                    android:clickable="true"
+                                    android:elevation="20dp"
+                                    android:focusable="true">
+
+                                    <RelativeLayout
+                                        android:id="@+id/katakataka"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/item_recommended_picture_katakataka"
+                                            android:layout_width="120dp"
+                                            android:layout_height="150dp"
+                                            android:background="@drawable/katakataka1" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_title_katakataka"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_katakataka"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_toStartOf="@+id/item_recommended_price_katakataka"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:lines="1"
+                                            android:maxLines="1"
+                                            android:singleLine="true"
+                                            android:text="Kata-kataka"
+                                            android:textColor="@color/dark_late_gray" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_price_katakataka"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_katakataka"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="10dp"
+                                            android:drawableEnd="@drawable/ic_baseline_read"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:textColor="@color/cadet_blue" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_country_katakataka"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_title_katakataka"
+                                            android:layout_marginStart="10dp"
+                                            android:fontFamily="@font/nunito_semi_bold"
+                                            android:text="Kalanchoe pinnata"
+                                            android:textColor="@color/gray"
+                                            android:textSize="11sp"
+                                            tools:ignore="SmallSp" />
+
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Internal Use:"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/InternalButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:background="@drawable/morebutton"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/nunito_semi_bold"
+                            android:text="more" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/scrollview2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="40dp"
+                                    android:background="@drawable/bg_recommended"
+                                    android:clickable="true"
+                                    android:elevation="20dp"
+                                    android:focusable="true">
+
+                                    <RelativeLayout
+                                        android:id="@+id/ampalaya"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/item_recommended_picture_ampalaya"
+                                            android:layout_width="120dp"
+                                            android:layout_height="150dp"
+                                            android:background="@drawable/ampalaya" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_title_ampalaya"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_ampalaya"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_toStartOf="@+id/item_recommended_price_ampalaya"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:lines="1"
+                                            android:maxLines="1"
+                                            android:singleLine="true"
+                                            android:text="Ampalaya"
+                                            android:textColor="@color/dark_late_gray" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_price_ampalaya"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_ampalaya"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="10dp"
+                                            android:drawableEnd="@drawable/ic_baseline_read"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:textColor="@color/cadet_blue" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_country_ampalaya"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_title_ampalaya"
+                                            android:layout_marginStart="10dp"
+                                            android:fontFamily="@font/nunito_semi_bold"
+                                            android:text="Bitter Melon Leaves"
+                                            android:textColor="@color/gray"
+                                            android:textSize="11sp"
+                                            tools:ignore="SmallSp" />
+
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/picture_atis"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="40dp"
+                                    android:background="@drawable/bg_recommended"
+                                    android:clickable="true"
+                                    android:elevation="20dp"
+                                    android:focusable="true">
+
+                                    <RelativeLayout
+                                        android:id="@+id/atis"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/item_recommended_picture_atis"
+                                            android:layout_width="120dp"
+                                            android:layout_height="150dp"
+                                            android:background="@drawable/atis1" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_title_atis"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_atis"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_toStartOf="@+id/item_recommended_price_atis"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:lines="1"
+                                            android:maxLines="1"
+                                            android:singleLine="true"
+                                            android:text="Atis"
+                                            android:textColor="@color/dark_late_gray" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_price_atis"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_atis"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="10dp"
+                                            android:drawableEnd="@drawable/ic_baseline_read"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:textColor="@color/cadet_blue" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_country_atis"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_title_atis"
+                                            android:layout_marginStart="10dp"
+                                            android:fontFamily="@font/nunito_semi_bold"
+                                            android:text="Custard Apple Leaves"
+                                            android:textColor="@color/gray"
+                                            android:textSize="11sp"
+                                            tools:ignore="SmallSp" />
+
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/image_bayabas"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="40dp"
+                                    android:background="@drawable/bg_recommended"
+                                    android:clickable="true"
+                                    android:elevation="20dp"
+                                    android:focusable="true">
+
+                                    <RelativeLayout
+                                        android:id="@+id/bayabas"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/item_recommended_picture_bayabas"
+                                            android:layout_width="120dp"
+                                            android:layout_height="150dp"
+                                            android:background="@drawable/bayabas1" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_title_bayabas"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_bayabas"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_toStartOf="@+id/item_recommended_price_bayabas"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:lines="1"
+                                            android:maxLines="1"
+                                            android:singleLine="true"
+                                            android:text="Bayabas"
+                                            android:textColor="@color/dark_late_gray" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_price_bayabas"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_bayabas"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="10dp"
+                                            android:drawableEnd="@drawable/ic_baseline_read"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:textColor="@color/cadet_blue" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_country_bayabas"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_title_bayabas"
+                                            android:layout_marginStart="10dp"
+                                            android:fontFamily="@font/nunito_semi_bold"
+                                            android:text="Guava Leaves"
+                                            android:textColor="@color/gray"
+                                            android:textSize="10sp"
+                                            tools:ignore="SmallSp" />
+
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="40dp"
+                                    android:background="@drawable/bg_recommended"
+                                    android:clickable="true"
+                                    android:elevation="20dp"
+                                    android:focusable="true">
+
+                                    <RelativeLayout
+                                        android:id="@+id/tawatawa"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/item_recommended_picture_tawatawa"
+                                            android:layout_width="120dp"
+                                            android:layout_height="150dp"
+                                            android:background="@drawable/tawatawa1" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_title_tawatawa"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_tawatawa"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_toStartOf="@+id/item_recommended_price_tawatawa"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:lines="1"
+                                            android:maxLines="1"
+                                            android:singleLine="true"
+                                            android:text="Tawa-tawa"
+                                            android:textColor="@color/dark_late_gray" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_price_tawatawa"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_picture_tawatawa"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="10dp"
+                                            android:drawableEnd="@drawable/ic_baseline_read"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:textColor="@color/cadet_blue" />
+
+                                        <TextView
+                                            android:id="@+id/item_recommended_country_tawatawa"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/item_recommended_title_tawatawa"
+                                            android:layout_marginStart="10dp"
+                                            android:fontFamily="@font/nunito_semi_bold"
+                                            android:text="Euphorbia Hirta"
+                                            android:textColor="@color/gray"
+                                            android:textSize="11sp"
+                                            tools:ignore="SmallSp" />
+
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <RelativeLayout
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/half_rounded">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="409dp"
+                        android:layout_height="232dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/top_background" />
+
+                    <ImageView
+                        android:id="@+id/plantobeanim"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/ic_plant1" />
+
+                    <TextView
+                        android:id="@+id/your_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginTop="56dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Identifier"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+
+                    <View
+                        android:id="@+id/linenalang"
+                        android:layout_width="40dp"
+                        android:layout_height="10dp"
+                        android:layout_below="@+id/your_name2"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_search" />
+
+                    <TextView
+                        android:id="@+id/your_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Herbal Plant"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+
+                    <ImageView
+                        android:id="@+id/appinfor"
+                        android:layout_width="37dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="14dp"
+                        app:srcCompat="@drawable/ic_info" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutscanview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                    <LinearLayout
+                        android:id="@+id/ViewLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_search"
+                        android:duplicateParentState="false"
+                        android:elevation="8dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:cropToPadding="true"
+                            android:padding="-10dp"
+                            app:srcCompat="@drawable/ic_location" />
+
+                        <Button
+                            android:id="@+id/scanButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/bg_green_line"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/nunito_bold"
+                            android:paddingTop="0dp"
+                            android:text="View"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ScanLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_search"
+                        android:duplicateParentState="false"
+                        android:elevation="8dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:cropToPadding="true"
+                            android:padding="-10dp"
+                            app:srcCompat="@drawable/ic_camera" />
+
+                        <Button
+                            android:id="@+id/viewBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/bg_green_line"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/nunito_bold"
+                            android:paddingTop="0dp"
+                            android:text="Scan"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

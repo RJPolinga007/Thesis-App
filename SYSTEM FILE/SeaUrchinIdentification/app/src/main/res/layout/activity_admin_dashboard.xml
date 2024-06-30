@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminDashboard">
+        <!-- Users -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dashboard_background"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"/>
+
+        <!-- View Users Button -->
+        <Button
+            android:id="@+id/btnViewUsers"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="View Users"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background_users"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="64dp"/>
+
+        <!-- View Fish Descriptions Button -->
+        <Button
+            android:id="@+id/btnViewFish"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="View Fish Descriptions"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background_fish"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_below="@id/btnViewUsers"
+            android:layout_marginTop="32dp"/>
+
+        <!-- View Ratings Button -->
+        <Button
+            android:id="@+id/btnViewRatings"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="View Ratings"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background_ratings"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_below="@id/btnViewFish"
+            android:layout_marginTop="32dp"/>
+
+    </RelativeLayout>
+    </RelativeLayout>

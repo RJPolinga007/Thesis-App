@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tops"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="-75dp"
+            android:src="@drawable/wave__2_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginTop="63dp"
+            android:layout_width="60dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/arrow"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_marginTop="60dp"
+            android:textStyle="bold"
+            android:text="Additional Information"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="70dp"
+            android:layout_height="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_below="@+id/tops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:fontFamily="@font/med"
+                android:layout_height="wrap_content"
+                android:text="Identifying the quality of fish involves using several sensory cues to assess its freshness and overall condition. Here are additional some key factors to consider:"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/med"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Appearance:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Eyes: Fresh fish have clear, bright, and bulging eyes. Cloudy, sunken, or dull eyes are signs of older or lower-quality fish."
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Skin and Scales: The skin should be shiny, moist, and free from blemishes or discoloration. Scales should be tightly adhered and iridescent."
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Color: Look for vibrant, consistent colors. Red or pink gills, if visible, indicate freshness in certain species like salmon."
+                android:textSize="14sp"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/med"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Texture and Firmness:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Flesh: Press the flesh gently with your finger. It should be firm, elastic, and bounce back when touched. Avoid fish with mushy or soft flesh."
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Skin Resilience: The skin should quickly bounce back when pressed, rather than leaving an indentation."
+                android:textSize="14sp"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/med"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Smell:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Fresh Ocean Scent: A fresh fish should have a clean, briny, and ocean-like smell. Avoid fish with a strong 'fishy' odor, ammonia smell, or any unpleasant aroma."
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gills:"
+                android:textColor="@color/black"
+                android:fontFamily="@font/med"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Check the gills. They should be bright red or pink, indicating recent gill movement and oxygen exchange."
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time Since Catch:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/med"
+                android:textSize="16sp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Ask the seller or check for information on when the fish was caught. The sooner after catch you consume it, the fresher it will be."
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Ensure the fish has been properly stored and handled to maintain freshness."
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By using these sensory cues and considering factors such as appearance, texture, smell, and source, you can make informed decisions about the quality and freshness of the fish you are purchasing."
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:paddingTop="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
